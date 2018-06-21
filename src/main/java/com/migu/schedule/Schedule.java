@@ -18,19 +18,11 @@ import com.migu.schedule.info.TaskInfo;
 *类名和方法不能修改
  */
 public class Schedule {
-    /**
-     * 注册节点Set
-     */
+    
     public static HashSet<Integer> registerNodeSet = new HashSet<Integer>();
     
-    /**
-     * 任务挂起队列
-     */
     public static Queue<Task> waitQueue = new LinkedList<Task>();
     
-    /**
-     * 任务分配数组
-     */
     public static Map<Integer, LinkedList<Task>> RuningTask = new HashMap<Integer, LinkedList<Task>>();
     
     public int init() {
